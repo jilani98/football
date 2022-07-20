@@ -10,12 +10,7 @@
 
 }
 
-p {
 
-    overflow: hidden;
-    Text-overflow: ellipsis;
-
-}
 
 .main-menu {
     display: flex;
