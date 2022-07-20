@@ -10,6 +10,13 @@
 
 }
 
+p {
+
+    overflow: hidden;
+    Text-overflow: ellipsis;
+
+}
+
 .main-menu {
     display: flex;
     background-color: black;
@@ -17,6 +24,7 @@
     color: white;
     padding: 50px;
     border-radius: 10px;
+    height: 40vh;
 }
 
 .button-1 {
