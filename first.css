@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.main-menu {
+    display: flex;
+    background-color: black;
+    font-size: 1.2rem;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.button-1 {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    animation-name: button-anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes button-anim {
+    0% {
+
+        background-color: red;
+
+    }
+
+    50% {
+
+        background-color: blue;
+    }
+
+    100% {
+
+        background-color: brown;
+    }
+}
+
+.fa-greater-than {
+    font-size: 10px;
+}
+
+
+
+
+
+button {
+    padding: 3px;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+}
+
+
+
+
+.image-style {
+    width: 100%;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+
+}
+
+.aside {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-bar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+
+
+}
+
+.menu-bar a {
+    text-decoration: none;
+    padding: 10px 40px;
+    color: white;
+    border: 1px solid rgb(235, 209, 209);
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 70px;
+    height: 20px;
+
+}
+
+.footer {
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    color: white;
+    margin-top: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.text {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+
+}
+
+.text li {
+    margin: 0 20px;
+    margin-bottom: 100px;
+
+
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.others {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-1,
+.icon-2 {
+    display: flex;
+    align-items: center;
+
+}
+
+/* small devices */
+@media screen and (max-width:680px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .cards,
+    .aside,
+    .menu-bar,
+    .socials,
+    .main-menu {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 10px;
+
+    }
+
+    .socials li {
+        line-height: 30px;
+    }
+
+    .others {
+        flex-direction: space-evenly;
+    }
+
+    .text {
+        flex-direction: column;
+    }
+
+    .button-1 {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+/* tab devices */
+
+@media screen and (min-width:680px) and (max-width:900px) {
+    .container {
+        width: 100%;
+
+    }
+
+
+    .aside,
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 10px;
+
+    }
+
+    .menu-bar {
+        flex-direction: row;
+        align-items: center;
+        height: 200px;
+        width: 400px;
+        justify-content: center;
+        display: flex;
+        background-color: black;
+    }
+}
+
+
+
+
+
+
+
+.menu-bar a:hover {
+    background-color: rgb(236, 13, 13);
+}
+
+
+.cards-img {
+    width: 400px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+}
+
+.image-style2 {
+    width: 100%;
+}
+
+.picture {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+
+}
+
+.image-desc {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
