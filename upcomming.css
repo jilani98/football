@@ -1,0 +1,16 @@
+@media screen and (max-width:675px) {
+    .description {
+
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width:900px) {
+
+    .description {
+
+        grid-template-columns: auto auto;
+        margin-left: 80px;
+    }
+
+}
