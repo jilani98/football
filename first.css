@@ -341,7 +341,7 @@ button {
     background-color: rgb(236, 13, 13);
 }
 
-
+/* next page */
 
 .image-style2 {
     width: 100%;
@@ -393,4 +393,9 @@ p {
 
 
     margin-top: 10px;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
 }
