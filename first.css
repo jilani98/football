@@ -15,6 +15,11 @@ body {
 
 }
 
+.container {
+    overflow: hidden;
+}
+
+/* main-menu */
 
 .header {
     width: 90%;
@@ -35,6 +40,9 @@ body {
 
 }
 
+
+/* animation button */
+
 .button-1 {
     padding: 10px;
     background-color: red;
@@ -45,9 +53,17 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    margin-top: 100px;
 
 }
 
+button {
+    padding: 3px;
+}
+
+
+
+/* for annimation */
 @keyframes button-anim {
     0% {
 
@@ -66,30 +82,17 @@ body {
     }
 }
 
-.fa-greater-than {
-    font-size: 10px;
-}
 
 
 
+/* card section */
 
 
-button {
-    padding: 3px;
-}
 
 .card {
     box-sizing: border-box;
     box-shadow: 1px 2px 4px black;
 }
-
-
-
-
-.image-style {
-    width: 100%;
-}
-
 
 .cards {
     display: grid;
@@ -101,10 +104,38 @@ button {
 
 }
 
+.cards-img {
+    width: 400px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+}
+
+
 .card-title {
 
     padding: 10px;
 }
+
+
+.icon-1,
+.icon-2 {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+/* card image style */
+
+.image-style {
+    width: 100%;
+}
+
+
+
+/* aside part */
+
 
 .aside {
     display: flex;
@@ -138,6 +169,8 @@ button {
 
 }
 
+/* footer section */
+
 .footer {
     background-color: black;
     height: auto;
@@ -153,6 +186,11 @@ button {
     flex-direction: column;
 
 }
+
+.fa-greater-than {
+    font-size: 10px;
+}
+
 
 .socials {
     list-style: none;
@@ -203,15 +241,11 @@ button {
     justify-content: space-around;
 }
 
-.icon-1,
-.icon-2 {
-    display: flex;
-    align-items: center;
 
-}
+
 
 /* small devices */
-@media screen and (max-width:675px) {
+@media screen and (max-width:480px) {
 
     .container {
         width: 100%;
@@ -259,9 +293,10 @@ button {
 
 /* tab devices */
 
-@media screen and (min-width:680px) and (max-width:900px) {
+@media screen and (min-width:421px) and (max-width:768px) {
     .container {
         width: 100%;
+
 
     }
 
@@ -307,12 +342,6 @@ button {
 }
 
 
-.cards-img {
-    width: 400px;
-    margin: 10px;
-    box-sizing: border-box;
-    box-shadow: 1px 2px 4px black;
-}
 
 .image-style2 {
     width: 100%;
@@ -356,4 +385,12 @@ button {
 
 .menu-bar a:active {
     background-color: blue;
+}
+
+
+.background h1,
+p {
+
+
+    margin-top: 10px;
 }
